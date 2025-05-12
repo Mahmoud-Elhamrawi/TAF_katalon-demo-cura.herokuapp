@@ -1,0 +1,25 @@
+[INFO] - {12-05-2025 20:56:17} [main] [com.Test_V8.Listeners.testNGListener] - Execution started
+[INFO] - {12-05-2025 20:56:17} [main] [com.Test_V8.Listeners.testNGListener] - start load properties Files
+[INFO] - {12-05-2025 20:56:17} [main] [com.Test_V8.Listeners.testNGListener] - The Previous screenshots are deleted 
+[INFO] - {12-05-2025 20:56:17} [main] [com.Test_V8.Listeners.testNGListener] - The Previous logs are deleted 
+[INFO] - {12-05-2025 20:56:17} [main] [com.Test_V8.Listeners.testNGListener] - The Previous allure results are deleted
+[INFO] - {12-05-2025 20:56:17} [main] [com.Test_V8.Listeners.testNGListener] - Test Suite,  TAF_katalon-demo-cura.herokuapp  started
+[INFO] - {12-05-2025 20:56:23} [main] [com.Test_V8_TC.End2endFlowTC] - the browser Name is : edge
+[INFO] - {12-05-2025 20:56:26} [main] [com.Test_V8_TC.End2endFlowTC] - the base Url is : https://katalon-demo-cura.herokuapp.com/
+[INFO] - {12-05-2025 20:56:26} [main] [com.Test_V8.Listeners.testNGListener] - Test Case,  end2EndTC  started
+[INFO] - {12-05-2025 20:56:30} [main] [com.Test_V8.Pages.P03_homePage] - Validation : Navigated to home page Url
+[INFO] - {12-05-2025 20:56:30} [main] [com.Test_V8.Pages.P03_homePage] - Healthcare Program is : medicaid
+[INFO] - {12-05-2025 20:56:31} [main] [com.Test_V8.Pages.P03_homePage] - Visit Date is : 31
+[INFO] - {12-05-2025 20:56:31} [main] [com.Test_V8.Pages.P03_homePage] - Comment is : test comment
+[INFO] - {12-05-2025 20:56:32} [main] [com.Test_V8.Pages.P03_homePage] - Book Appointment button is clicked
+[INFO] - {12-05-2025 20:56:32} [main] [com.Test_V8.Pages.P04_AppointmentConfirmation] - Validation : Navigated to confirmation page Url
+[INFO] - {12-05-2025 20:56:32} [main] [com.Test_V8.Pages.P04_AppointmentConfirmation] - Validation : Confirmation text is : Appointment Confirmation
+[INFO] - {12-05-2025 20:56:32} [main] [com.Test_V8.Pages.P04_AppointmentConfirmation] - Validation : Facility text is : Seoul CURA Healthcare Center
+[INFO] - {12-05-2025 20:56:32} [main] [com.Test_V8.Pages.P04_AppointmentConfirmation] - Validation : Healthcare Program text is : medicaid
+[INFO] - {12-05-2025 20:56:32} [main] [com.Test_V8.Pages.P04_AppointmentConfirmation] - Validation : Comment text is : test comment
+[INFO] - {12-05-2025 20:56:33} [main] [com.Test_V8.Pages.P03_homePage] - Validation : Navigated to home page Url
+[INFO] - {12-05-2025 20:56:33} [main] [com.Test_V8_TC.End2endFlowTC] - logout from application
+[INFO] - {12-05-2025 20:56:34} [main] [com.Test_V8.Pages.P01_LandingPage] - Logout button is clicked
+[INFO] - {12-05-2025 20:56:34} [main] [com.Test_V8.Listeners.testNGListener] - Test Case,  end2EndTC  passed
+[INFO] - {12-05-2025 20:56:34} [main] [com.Test_V8.Listeners.testNGListener] - Test Suite,  TAF_katalon-demo-cura.herokuapp  finished
+[INFO] - {12-05-2025 20:56:34} [main] [com.Test_V8.Listeners.testNGListener] - Execution finished

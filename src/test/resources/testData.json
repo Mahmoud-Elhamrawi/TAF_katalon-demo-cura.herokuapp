@@ -1,0 +1,6 @@
+{
+  "valid-credentialsData": {
+    "userName": "John Doe",
+    "password": "ThisIsNotAPassword"
+  }
+}
