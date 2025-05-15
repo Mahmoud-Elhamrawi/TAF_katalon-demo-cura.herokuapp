@@ -1,6 +1,5 @@
 package com.Test_V8.Listeners;
 
-import com.Test_V8.Driverr.DriverManger;
 import com.Test_V8.Utils.AllureUtil.AllureUtils;
 import com.Test_V8.Utils.ClassesUtil.ClassUtils;
 import com.Test_V8.Utils.Fileutil.FileUtils;
@@ -8,11 +7,9 @@ import com.Test_V8.Utils.LogUtil.LogUtils;
 import org.testng.*;
 
 import java.io.File;
-import java.sql.DriverManager;
 
 import static com.Test_V8.Utils.DataUtils.readPropertyFile.loadProperties;
 import static com.Test_V8.Utils.Fileutil.FileUtils.cleanDirectory;
-import static java.sql.DriverManager.getDriver;
 
 public class testNGListener implements IInvokedMethodListener, IExecutionListener, ITestListener {
 

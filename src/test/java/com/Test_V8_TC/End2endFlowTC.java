@@ -1,6 +1,6 @@
 package com.Test_V8_TC;
 
-import com.Test_V8.Driverr.DriverManger;
+import com.Test_V8.Driverr.GuiDriver;
 import com.Test_V8.Listeners.testNGListener;
 import com.Test_V8.Pages.P01_LandingPage;
 import com.Test_V8.Utils.BrowserActions.BrowserAction;
@@ -16,6 +16,7 @@ import static com.Test_V8.Utils.DataUtils.readPropertyFile.getPropertyName;
 @Listeners(testNGListener.class)
 public class End2endFlowTC {
 
+    GuiDriver driver;
     readDateFromJsonFile fromJsonFile;
 
     @Step("validate end 2 end scenario")
@@ -23,7 +24,7 @@ public class End2endFlowTC {
     @Test()
     public void end2EndTC() {
 
-        new P01_LandingPage(DriverManger.getDrive())
+        new P01_LandingPage(GuiDriver.getDrive())
                 .assertBaseUrl()
                 .clickOnToggleBtn()
                 .clickOnLoginLink()
@@ -46,7 +47,7 @@ public class End2endFlowTC {
 
         LogUtils.info("logout from application");
 
-        new P01_LandingPage(DriverManger.getDrive())
+        new P01_LandingPage(GuiDriver.getDrive())
                 .clickOnToggleBtn().clickLogout().assertBaseUrl();
 
     }
@@ -55,11 +56,12 @@ public class End2endFlowTC {
     //Configuration
     @BeforeMethod
     public void setUpMethod() {
+        driver = new GuiDriver(getPropertyName("browserName"));
 
-        DriverManger.createDriver(getPropertyName("browserName"));
+        //GuiDriver.createDriver(getPropertyName("browserName"));
         LogUtils.info("the browser Name is : " + getPropertyName("browserName"));
 
-        BrowserAction.navigateToUrl(DriverManger.getDrive(), getPropertyName("baseUrl"));
+        BrowserAction.navigateToUrl(GuiDriver.getDrive(), getPropertyName("baseUrl"));
         LogUtils.info("the base Url is : " + getPropertyName("baseUrl"));
     }
 
@@ -72,7 +74,7 @@ public class End2endFlowTC {
 
     @AfterMethod
     public void closeDriver() {
-        DriverManger.closeDriver(DriverManger.getDrive());
+        GuiDriver.closeDriver(GuiDriver.getDrive());
 
     }
 

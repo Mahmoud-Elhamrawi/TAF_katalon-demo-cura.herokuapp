@@ -1,12 +1,11 @@
 package com.Test_V8.Utils.ClassesUtil;
 
-import com.Test_V8.Driverr.DriverManger;
+import com.Test_V8.Driverr.GuiDriver;
 import com.Test_V8.Utils.AllureUtil.AllureUtils;
 import com.Test_V8.Utils.LogUtil.LogUtils;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -20,7 +19,7 @@ public class ClassUtils {
     //Take screenshot
     public static void takeScreenshot(String screenName) {
         try {
-            File src = ((TakesScreenshot) DriverManger.getDrive()).getScreenshotAs(OutputType.FILE);
+            File src = ((TakesScreenshot) GuiDriver.getDrive()).getScreenshotAs(OutputType.FILE);
             File dist = new File(screenshotPath + screenName + getTimeStamp() + ".png");
             FileUtils.copyFile(src, dist);
             AllureUtils.addScreenshotToAllure(screenName, String.valueOf(dist));
